@@ -1,0 +1,124 @@
+﻿@model List<StudentStreamingSystem.Context.Course>
+@{
+    ViewBag.Title = "Index";
+}
+<html>
+<head>
+    <title>Guest</title>
+</head>
+<body>
+    <h2 class="text-center">Courses Details</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-11"></div>
+        <div>
+
+            <button value="showAlert" class="btn btn-primary" onclick="showAlert();">Print Email</button>
+        </div>
+    </div>
+    <div class="container" style="display:none;" id="myAlert">
+    </div>
+    <br />
+    @*<input type="button" value="My TimeTable" onclick="location.href='@Url.Action("ViewMyTimeTable", "Student")'" />*@
+
+@using (Html.BeginForm("Filter", "Calender", FormMethod.Post))
+{
+
+
+    <button class="checkall" id="checkbtn"name="check" type="submit" > Show Time Table in Calender Form</button>
+
+            <br /><br />
+
+    <table class="table table-hover table-bordered" id="myTable">
+        <thead>
+
+            <tr>
+                <th>Course No.</th>
+                <th>Course Name</th>
+                <th>Programme</th>
+                <th>Campus</th>
+                <th>Credits</th>
+                <th>Streams</th>
+                <th>Class Type</th>
+                <th>Begins At</th>
+                <th>Ends At</th>
+                <th>Select</th>
+
+            </tr>
+        </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CourseNo</td>
+                <td>@item.CourseName</td>
+                <td>@item.Programme</td>
+                <td>@item.Campus</td>
+                <td>@item.Credits</td>
+                <td>@item.Streams</td>
+                <td>@item.ClassType</td>
+                <td>@item.BeginsAt</td>
+                <td>@item.EndsAt</td>
+                <td><input type="checkbox" name="ID" id="checkbox1"value="@item.CourseID" class="custom-checkbox chkCheckBoxId" /></td>
+
+            </tr>
+        }
+    </tbody>
+
+    </table>
+}
+</body>
+</html>
+@section scripts{
+    <script>
+    $(document).ready(function () {
+        $('#myTable').dataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'print'
+            ],
+            columnDefs: [{
+                orderable: false,
+                className: 'select-checkbox select-checkbox-all',
+                targets: 0
+            }],
+            select: {
+                style: 'multi',
+                selector: 'td:first-child'
+            }
+        
+
+        });
+        $(".buttons-print").remove();
+        console.log($(".buttons-print").remove());
+
+
+
+     
+
+
+    });
+
+
+    function showAlert() {
+        if ($("#myAlert").find("div#myAlert2").length == 0) {
+            $("#myAlert").append("<div class='alert alert-danger alert-dismissable' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button>Warning! Print or Save you need to login as Student or contact administration.</div>");
+             $("#myAlert").append("<a class='btn btn-success' data-dismiss='alert' aria-hidden='true' href='@Url.Action("Login","Student")'>Student Login</a>");
+        }
+        $("#myAlert").css("display", "");
+    }
+    </script>
+ <script>
+    $('button[type="submit"]').on('click', function (event) {
+        event.preventDefault();
+        if ($('input:checkbox:checked').length >= 2) {
+            $('form').submit();
+        } else {
+            alert("Please select atleast two checkbox");
+     }
+    });
+</script>
+    }
+
+
+

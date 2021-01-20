@@ -1,0 +1,85 @@
+﻿@model IEnumerable<StudentStreamingSystem.Context.Course>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewCourses</title>
+</head>
+<body>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Programme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Campus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Credits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Streams)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThemeColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BeginsAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndsAt)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Programme)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Campus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Credits)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Streams)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClassType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThemeColor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BeginsAt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndsAt)
+                </td>
+             
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

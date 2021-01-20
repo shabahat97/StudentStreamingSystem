@@ -1,0 +1,67 @@
+﻿@model  StudentStreamingSystem.Context.Student
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowCourseSelection</title>
+</head>
+
+<body>
+
+
+    <div class="content-wrapper" style="margin-top:50px;">
+        <div class="card card-info">
+            <div class="card-header ">
+                <h3 class="card-title ">Select Student Application Number</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+
+                <form class="form-horizontal">
+                    <div class="card-body">
+
+                        <div class="form-group row">
+                            <div class="col-md-1"></div>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Student</label>
+                            <div class="col-sm-7">
+                                @Html.DropDownListFor(m => m.StudentID, (IEnumerable<SelectListItem>)ViewBag.course, "--Select Student--", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(x => Model.StudentID, "", new { @class = "text-danger" })
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-md-8 text-center">
+                                <button type="submit" class="btn btn-primary">Next</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /.card-footer -->
+                </form>
+            }
+        </div>
+        <a href="@Url.Action("AdminUpload","Admin")" class="btn btn-primary">Back To Admin</a>
+
+
+    </div>
+
+    <div>
+    </div>
+</body>
+</html>

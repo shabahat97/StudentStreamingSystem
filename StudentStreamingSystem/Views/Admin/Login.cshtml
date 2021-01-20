@@ -1,0 +1,43 @@
+﻿@using StudentStreamingSystem.MyClasses
+@model StudentStreamingSystem.Context.Admin
+@{
+    ViewBag.Title = "Login";
+}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 table-bordered" style="margin-top:80px;padding:0px 50px 0px 50px">
+                <h1 class="text-center">ADMIN</h1>
+                <hr />
+                <br />
+                @using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control", @placeholder = "Your Email" })
+                        @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.PasswordFor(x => x.Password, new { @class = "form-control", @placeholder = "Your Password" })
+                        @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <div class="text-danger">
+                            @Html.GoogleCaptcha()
+                            @Html.InvalidGoogleCaptchaLabel("Captcha is not valid !")
+                            @ViewBag.ErrorMessage
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-group-lg" style="width:300px">Log In</button>
+                    </div>
+                    <br />
+                }
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+
+

@@ -1,0 +1,70 @@
+﻿@model List<StudentStreamingSystem.Context.TimeTable>
+@{
+    ViewBag.Title = "ViewList";
+}
+<h3>Student Home Page</h3>
+<h4>Welcome to Student Section</h4>
+<br />
+<div class="container">
+    <div class="row">
+        @using (Html.BeginForm("Filter", "Calender", FormMethod.Post))
+        {
+            <button type="submit"> Show Time Table in Calender Form</button>
+            <br /><br />
+            <table id="myTable" style="width:100%;" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Credits Hour</th>
+                        <th>Class Type</th>
+                        <th>Course Type</th>
+                        <th>TutorName</th>
+                        <th>Room Name</th>
+                        <th>Begins At</th>
+                        <th>Ends At</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@item.CourseName</td>
+                            <td>@item.Credits</td>
+                            <td>@item.ClassType</td>
+                            <td>@item.CourseType</td>
+
+                            <td>@item.BeginsAt</td>
+                            <td>@item.EndsAt</td>
+                            <td><input type="checkbox" name="ID" value="@item.ID" class="custom-checkbox chkCheckBoxId" /></td>
+
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#myTable').dataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'print'
+                ],
+                columnDefs: [{
+                    orderable: false,
+                    className: 'select-checkbox select-checkbox-all',
+                    targets: 0
+                }],
+                select: {
+                    style: 'multi',
+                    selector: 'td:first-child'
+                }
+            });
+        });
+    </script>
+}

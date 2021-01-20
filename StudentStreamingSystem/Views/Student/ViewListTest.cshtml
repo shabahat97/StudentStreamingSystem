@@ -1,0 +1,133 @@
+﻿@model IEnumerable<StudentStreamingSystem.Context.Course>
+
+<h3>Student Home Page</h3>
+<h4>Welcome to Student Section</h4>
+<input type="button" value="My TimeTable" onclick="location.href='@Url.Action("ViewMyTimeTable", "Student")'" />
+
+<br />
+<div class="container">
+    <div class="row">
+
+
+        @using (Html.BeginForm("Filter", "Calender", FormMethod.Post))
+        {
+
+
+            <button class="checkall" name="check" type="submit"> Show Time Table in Calender Form</button>
+
+            <br /><br />
+
+
+            <table id="myTable" style="width:100%;" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CourseNo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CourseName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Programme)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Campus)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Credits)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Streams)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.BeginsAt)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EndsAt)
+                        </th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CourseNo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CourseName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Programme)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Campus)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Credits)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Streams)
+                            </td>
+
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BeginsAt)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EndsAt)
+                            </td>
+                            <td><input type="checkbox" name="ID" value="@item.CourseID" class="custom-checkbox chkCheckBoxId" /></td>
+
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        }
+    </div>
+</div>
+
+
+
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#myTable').dataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'print'
+                ],
+                columnDefs: [{
+                    orderable: false,
+                    className: 'select-checkbox select-checkbox-all',
+                    targets: 0
+                }],
+                select: {
+                    style: 'multi',
+                    selector: 'td:first-child'
+                }
+            });
+        });
+
+     
+
+    </script>
+
+<script>
+    $('button[type="submit"]').on('click', function (event) {
+        event.preventDefault();
+        if ($('input:checkbox:checked').length >= 2) {
+            $('form').submit();
+        } else {
+            alert("Please select atleast two checkbox");
+     }
+    });
+</script>
+
+
+}

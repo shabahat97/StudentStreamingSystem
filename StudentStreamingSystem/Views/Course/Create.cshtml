@@ -1,0 +1,132 @@
+﻿@model StudentStreamingSystem.Context.Course
+@{
+    ViewBag.Title = "Create";
+}
+<h2>Add Courses</h2>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div>
+                @using (Html.BeginForm("Create", "Course", FormMethod.Post))
+                {
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.CourseNo, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CourseNo, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CourseNo, "", new { @class = "text-danger" })
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-1"></div>
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Room</label>
+                        <div class="col-sm-7">
+                            @Html.DropDownListFor(m => m.RoomId, (IEnumerable<SelectListItem>)ViewBag.roomname, "--Select Room--", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.RoomId, "", new { @class = "text-danger" })
+
+
+                        </div>
+
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.CourseName, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CourseName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CourseName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.Programme, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Programme, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Programme, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.Campus, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Campus, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Campus, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.Credits, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Credits, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Credits, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.Streams, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Streams, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Streams, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.ClassType, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ClassType, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ClassType, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.CourseType, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CourseType, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CourseType, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.BeginsAt, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.BeginsAt, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.BeginsAt, "", new { @class = "text-danger" })
+                            <span class="text-danger">2020-10-25 12:00:00 Add Date Date In This Format Only</span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2">
+                            @Html.LabelFor(model => model.EndsAt, htmlAttributes: new { @class = "control-label col-md-2", @style = "float: left;text-align: left;" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.EndsAt, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.EndsAt, "", new { @class = "text-danger" })
+                            <span class="text-danger">2020-10-25 12:00:00 Add Date Date In This Format Only</span>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Submit" />
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <a href="@Url.Action("AdminUpload","Admin")" class="btn btn-primary">Back To Admin</a>
+</div>
+<script type="text/javascript">
+    $(document).ready(function ()
+    { $("#datepicker").datepicker({}); });
+</script>

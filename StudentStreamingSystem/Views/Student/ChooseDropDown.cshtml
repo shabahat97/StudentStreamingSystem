@@ -1,0 +1,44 @@
+﻿@model StudentStreamingSystem.Context.Course
+@{
+    ViewBag.Title = "ChooseDropDown";
+}
+
+<h4>Select Courses to View Time Table</h4>
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm())
+        {
+            <div class="form-horizontal">
+                <div class="form-group">
+
+                    @*@Html.DropDownListFor(m => m.CourseID, new SelectList(Model.GetCoursesList, "CourseID", "CourseName"), new { id = "normalDropdown", @class = "form-control" })*@
+                    @*@Html.DropDownListFor(m => m.CourseID, new MultiSelectList(Model.GetCoursesList, "CourseID", "CourseName"), new { id = "multiselectDropDown", multiple = "multiple", @class = "form-control" })*@
+                    @Html.DropDownListFor(m => m.CourseID, (IEnumerable<SelectListItem>)ViewBag.courseselection, "--Select Course--", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => Model.CourseID, "", new { @class = "text-danger" })
+
+
+
+
+
+
+                </div>
+                <div class="col-md-8 text-center">
+                    <button type="submit" class="btn btn-primary">Next</button>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-md-8"></div>
+</div>
+
+
+@*@section scripts{
+    <script>
+        $(function (){
+            $("#multiselectDropDown").chosen(
+                {
+                    width:"100%"
+                });
+        });
+    </script>
+    }*@

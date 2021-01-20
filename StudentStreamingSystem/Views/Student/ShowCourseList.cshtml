@@ -1,0 +1,43 @@
+﻿@model IEnumerable<StudentStreamingSystem.Context.StudentCourseSelection>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowCourseList</title>
+</head>
+<body>
+    
+    <a href="@Url.Action("ShowCourseList", "Student")" class="btn btn-success btn-sm">Refresh</a>
+    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+        <tr>
+            <th>
+                AP NO
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+    <a href="@Url.Action("AdminUpload","Admin")" class="btn btn-primary">Back To Admin</a>
+</body>
+</html>

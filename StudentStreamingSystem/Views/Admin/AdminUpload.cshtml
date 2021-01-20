@@ -1,0 +1,44 @@
+﻿
+@{
+        ViewBag.Title = "AdminUpload";
+    }
+<br />
+<br />
+    <div class="container">
+        <div class="row"><br /></div>
+        <div class="row justify-content-center">
+            <h1>Data Upload Utility</h1>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-3">
+                <a class="btn btn-primary form-control" href="@Url.Action("ViewCourses","Course")">Upload Courses</a>
+            </div>
+
+          
+            <div class="col-md-3">
+                <a class="btn btn-primary form-control" href="@Url.Action("ViewTutor","Tutor")">Upload Tutors</a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-primary form-control" href="@Url.Action("ViewRooms","Room")">Upload Rooms</a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-primary form-control" href="@Url.Action("ViewStudents","Student")">Student Information</a>
+
+
+            </div>
+           <br />
+            <br />
+            <br />
+           
+            <div class="col-md-3">
+                <a class="btn btn-primary form-control " href="@Url.Action("ShowCourseSelection","Student")">Student Course Selection</a>
+
+            </div>
+            @*<div class="col-md-3">
+                <a class="btn btn-primary form-control" href="@Url.Action("CreateTimeTable","Course")">Upload TimeTable</a>
+            </div>*@
+
+        </div>
+    </div>
+

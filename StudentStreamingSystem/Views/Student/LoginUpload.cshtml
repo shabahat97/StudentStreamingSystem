@@ -1,0 +1,72 @@
+﻿@model List<StudentStreamingSystem.Context.Course>
+@{
+    ViewBag.Title = "LoginUpload";
+}
+<h3>Student Home Page</h3>
+<h4>Welcome to Student Section</h4>
+<br />
+<div class="container">
+    <div class="row">
+        @using (Html.BeginForm("Filter", "Calender", FormMethod.Post))
+        {
+            <button type="submit"> Show Time Table in Calender Form</button>
+            <br /><br />
+            <table id="myTable" style="width:100%;" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Course No.</th>
+                        <th>Course Name</th>
+                        <th>Programme</th>
+                        <th>Campus</th>
+                        <th>Credits</th>
+                        <th>Streams</th>
+                        <th>Class Type</th>
+                        <th>Begins At</th>
+                        <th>Ends At</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@item.CourseNo</td>
+                            <td>@item.CourseName</td>
+                            <td>@item.Programme</td>
+                            <td>@item.Campus</td>
+                            <td>@item.Credits</td>
+                            <td>@item.Streams</td>
+                            <td>@item.ClassType</td>
+                            <td>@item.BeginsAt</td>
+                            <td>@item.EndsAt</td>
+                            <td><input type="checkbox" name="CourseID" value="@item.CourseID" class="custom-checkbox chkCheckBoxId" /></td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#myTable').dataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'print'
+                ],
+                columnDefs: [{
+                    orderable: false,
+                    className: 'select-checkbox select-checkbox-all',
+                    targets: 0
+                }],
+                select: {
+                    style: 'multi',
+                    selector: 'td:first-child'
+                }
+            });
+        });
+    </script>
+}

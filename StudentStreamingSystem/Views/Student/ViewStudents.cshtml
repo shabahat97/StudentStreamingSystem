@@ -1,0 +1,40 @@
+﻿@model List<StudentStreamingSystem.Context.Student>
+@{
+    ViewBag.Title = "ViewStudents";
+}
+<h2 class="text-center">Student Details</h2>
+<hr />
+<h4>Upload Excel File</h4>
+@using (Html.BeginForm("UploadExcelStudents", "Students", FormMethod.Post, new { enctype = "multipart/form-data", onsubmit = "return myFunction()" }))
+{
+    <div class="form-group">
+        <div class="control-label row-cols-4">
+            <input type="file" id="FileUpload" name="FileUpload" class="btn btn-outline-primary" style="border:1px solid blue" />
+            <input type="submit" value="Upload" id="btnSubmit" class="btn btn-primary btn-sm" />
+        </div>
+    </div>
+}
+<hr />
+<a href="@Url.Action("ViewStudents", "Student")" class="btn btn-success btn-sm">Refresh</a>
+<a href="@Url.Action("Create","Student")" class="btn btn-success btn-sm">Create New</a>
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <tr>
+        <th>Email</th>
+        <th>AP No</th>
+        <th>Edit/Delete</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Email</td>
+            <td>@item.APNo</td>
+            <td>
+                <a href="@Url.Action("ConvertAptoId",new {id=item.StudentID })" class="btn btn-success btn-sm">ConvertApno</a>
+
+                <a href="@Url.Action("EditStudents",new {id=item.StudentID })" class="btn btn-success btn-sm">Edit</a>
+                <a href="@Url.Action("DeleteStudents",new {id=item.StudentID })" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+<a href="@Url.Action("AdminUpload","Admin")" class="btn btn-primary">Back To Admin</a>

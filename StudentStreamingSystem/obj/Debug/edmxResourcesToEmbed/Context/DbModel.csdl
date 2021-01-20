@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentStreamingDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="CourseID" />
+    </Key>
+    <Property Name="CourseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CourseName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Programme" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Campus" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Credits" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Streams" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ClassType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ThemeColor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BeginsAt" Type="DateTime" Precision="3" />
+    <Property Name="EndsAt" Type="DateTime" Precision="3" />
+    <Property Name="CourseType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RoomId" Type="Int32" />
+    <Property Name="RoomName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Room" Relationship="Self.FK_Course_Rooms" FromRole="Course" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomID" />
+    </Key>
+    <Property Name="RoomID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Capacity" Type="Int32" />
+    <NavigationProperty Name="Courses" Relationship="Self.FK_Course_Rooms" FromRole="Rooms" ToRole="Course" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="APNo" Type="Int32" />
+    <NavigationProperty Name="TimeTables" Relationship="Self.FK_TimeTable_Student" FromRole="Student" ToRole="TimeTable" />
+  </EntityType>
+  <EntityType Name="StudentCourseSelection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="Int32" Nullable="false" />
+    <Property Name="CourseName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Credits" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ClassType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CourseType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="BeginsAt" Type="DateTime" Precision="3" />
+    <Property Name="EndsAt" Type="DateTime" Precision="3" />
+    <Property Name="ThemeColor" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="StudentId" Type="Int32" />
+    <Property Name="RoomName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Campus" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Student" Relationship="Self.FK_TimeTable_Student" FromRole="TimeTable" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Tutor">
+    <Key>
+      <PropertyRef Name="TutorID" />
+    </Key>
+    <Property Name="TutorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Course_Rooms">
+    <End Role="Rooms" Type="Self.Room" Multiplicity="0..1" />
+    <End Role="Course" Type="Self.Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rooms">
+        <PropertyRef Name="RoomID" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="RoomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TimeTable_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="StudentID" />
+      </Principal>
+      <Dependent Role="TimeTable">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StudentStreamingDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Courses" EntityType="Self.Course" />
+    <EntitySet Name="Rooms" EntityType="Self.Room" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <EntitySet Name="StudentCourseSelections" EntityType="Self.StudentCourseSelection" />
+    <EntitySet Name="TimeTables" EntityType="Self.TimeTable" />
+    <EntitySet Name="Tutors" EntityType="Self.Tutor" />
+    <AssociationSet Name="FK_Course_Rooms" Association="Self.FK_Course_Rooms">
+      <End Role="Rooms" EntitySet="Rooms" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TimeTable_Student" Association="Self.FK_TimeTable_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="TimeTable" EntitySet="TimeTables" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

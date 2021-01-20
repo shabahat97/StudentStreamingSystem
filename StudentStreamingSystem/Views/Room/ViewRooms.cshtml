@@ -1,0 +1,40 @@
+﻿@model List<StudentStreamingSystem.Context.Room>
+@{
+    ViewBag.Title = "ViewRooms";
+}
+<h2 class="text-center">Rooms Details</h2>
+<hr />
+<h4>Upload Excel File</h4>
+@using (Html.BeginForm("UploadExcelRoom", "Rooms", FormMethod.Post, new { enctype = "multipart/form-data", onsubmit = "return myFunction()" }))
+{
+    <div class="form-group">
+        <div class="control-label row-cols-4">
+            <input type="file" id="FileUpload" name="FileUpload" class="btn btn-outline-primary" style="border:1px solid blue" />
+            <input type="submit" value="Upload" id="btnSubmit" class="btn btn-primary btn-sm" />
+        </div>
+    </div>
+}
+<hr />
+<a href="@Url.Action("ViewRooms","Room")" class="btn btn-success btn-sm">Refresh</a>
+<a href="@Url.Action("Create","Room")" class="btn btn-success btn-sm">Create New</a>
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Capacity</th>
+        <th>Edit/Delete</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Capacity</td>
+            <td>
+                <a href="@Url.Action("EditRooms",new {id=item.RoomID })" class="btn btn-success btn-sm">Edit</a>
+                <a href="@Url.Action("DeleteRooms",new {id=item.RoomID })" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
+
+<a href="@Url.Action("AdminUpload","Admin")" class="btn btn-primary">Back To Admin</a>

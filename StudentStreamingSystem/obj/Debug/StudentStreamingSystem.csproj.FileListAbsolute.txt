@@ -1,0 +1,376 @@
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\StudentStreamingSystem.dll.config
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\StudentStreamingSystem.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\StudentStreamingSystem.pdb
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\csc.exe
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\csc.exe.config
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\csc.rsp
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\csi.exe
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\csi.exe.config
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\csi.rsp
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.AppContext.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Console.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.IO.Compression.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Net.Http.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.ValueTuple.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\vbc.exe
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\vbc.exe.config
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\vbc.rsp
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Antlr3.Runtime.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\BotDetect.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\BotDetect.Web.Mvc.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\CaptchaMvc.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\EntityFramework.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\hbehr.recaptcha.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\JetBrains.Annotations.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\LinqToExcel.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Identity.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Options.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.WebEncoders.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Win32.Registry.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Newtonsoft.Json.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\reCaptcha.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Remotion.Data.Linq.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Remotion.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Remotion.Interfaces.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Buffers.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.ComponentModel.Annotations.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Data.OleDb.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Data.SqlClient.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Data.SQLite.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Memory.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Numerics.Vectors.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Security.AccessControl.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Security.Cryptography.Xml.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Security.Permissions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Security.Principal.Windows.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Text.Encodings.Web.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Helpers.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Mvc.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Optimization.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Razor.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.WebPages.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\WebActivatorEx.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\WebGrease.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\CaptchaMvc.pdb
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\CaptchaMvc.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\EntityFramework.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\JetBrains.Annotations.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\LinqToExcel.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Cookies.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Core.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.Identity.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Identity.Core.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Options.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Extensions.WebEncoders.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\reCaptcha.pdb
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Buffers.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Data.OleDb.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Data.SqlClient.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Data.SQLite.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Data.SQLite.dll.config
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Memory.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Numerics.Vectors.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Text.Encodings.Web.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Helpers.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Mvc.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Optimization.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.Razor.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.WebPages.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Newtonsoft.Json.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Antlr3.Runtime.pdb
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.csprojAssemblyReference.cache
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.csproj.CopyComplete
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.dll
+C:\Users\Mustaqeem\Desktop\Latest Project\New folder\StudentStreamingSystem\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.pdb
+E:\Layout setting\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.csprojAssemblyReference.cache
+E:\Layout setting\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.csproj.CoreCompileInputs.cache
+E:\Layout setting\StudentStreamingSystem\bin\StudentStreamingSystem.dll.config
+E:\Layout setting\StudentStreamingSystem\bin\StudentStreamingSystem.dll
+E:\Layout setting\StudentStreamingSystem\bin\StudentStreamingSystem.pdb
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\csc.exe
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\csc.exe.config
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\csc.rsp
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\csi.exe
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\csi.exe.config
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\csi.rsp
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.AppContext.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Console.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Globalization.Calendars.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.IO.Compression.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Net.Http.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Net.Sockets.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.ValueTuple.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Xml.XPath.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\vbc.exe
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\vbc.exe.config
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\vbc.rsp
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\VBCSCompiler.exe
+E:\Layout setting\StudentStreamingSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Layout setting\StudentStreamingSystem\bin\Antlr3.Runtime.dll
+E:\Layout setting\StudentStreamingSystem\bin\BotDetect.dll
+E:\Layout setting\StudentStreamingSystem\bin\BotDetect.Web.Mvc.dll
+E:\Layout setting\StudentStreamingSystem\bin\CaptchaMvc.dll
+E:\Layout setting\StudentStreamingSystem\bin\EntityFramework.dll
+E:\Layout setting\StudentStreamingSystem\bin\EntityFramework.SqlServer.dll
+E:\Layout setting\StudentStreamingSystem\bin\hbehr.recaptcha.dll
+E:\Layout setting\StudentStreamingSystem\bin\JetBrains.Annotations.dll
+E:\Layout setting\StudentStreamingSystem\bin\LinqToExcel.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Cookies.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Core.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Extensions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Features.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Identity.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.WebUtilities.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Binder.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Identity.Core.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.ObjectPool.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Options.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Primitives.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.WebEncoders.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Net.Http.Headers.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Win32.Registry.dll
+E:\Layout setting\StudentStreamingSystem\bin\Newtonsoft.Json.dll
+E:\Layout setting\StudentStreamingSystem\bin\reCaptcha.dll
+E:\Layout setting\StudentStreamingSystem\bin\Remotion.Data.Linq.dll
+E:\Layout setting\StudentStreamingSystem\bin\Remotion.dll
+E:\Layout setting\StudentStreamingSystem\bin\Remotion.Interfaces.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Buffers.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.ComponentModel.Annotations.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Data.OleDb.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Data.SqlClient.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Data.SQLite.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Memory.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Numerics.Vectors.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Security.AccessControl.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Security.Cryptography.Xml.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Security.Permissions.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Security.Principal.Windows.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Text.Encodings.Web.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Threading.Tasks.Extensions.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Helpers.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Mvc.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Optimization.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Razor.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.WebPages.dll
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.WebPages.Razor.dll
+E:\Layout setting\StudentStreamingSystem\bin\WebActivatorEx.dll
+E:\Layout setting\StudentStreamingSystem\bin\WebGrease.dll
+E:\Layout setting\StudentStreamingSystem\bin\CaptchaMvc.pdb
+E:\Layout setting\StudentStreamingSystem\bin\CaptchaMvc.xml
+E:\Layout setting\StudentStreamingSystem\bin\EntityFramework.xml
+E:\Layout setting\StudentStreamingSystem\bin\EntityFramework.SqlServer.xml
+E:\Layout setting\StudentStreamingSystem\bin\JetBrains.Annotations.xml
+E:\Layout setting\StudentStreamingSystem\bin\LinqToExcel.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Cookies.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Authentication.Core.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Extensions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Http.Features.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.Identity.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.AspNetCore.WebUtilities.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Configuration.Binder.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Identity.Core.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.ObjectPool.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Options.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.Primitives.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Extensions.WebEncoders.xml
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.Net.Http.Headers.xml
+E:\Layout setting\StudentStreamingSystem\bin\reCaptcha.pdb
+E:\Layout setting\StudentStreamingSystem\bin\System.Buffers.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Data.OleDb.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Data.SqlClient.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Data.SQLite.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Data.SQLite.dll.config
+E:\Layout setting\StudentStreamingSystem\bin\System.Memory.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Numerics.Vectors.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Text.Encodings.Web.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Threading.Tasks.Extensions.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Helpers.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Mvc.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Optimization.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.Razor.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.WebPages.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Layout setting\StudentStreamingSystem\bin\System.Web.WebPages.Razor.xml
+E:\Layout setting\StudentStreamingSystem\bin\Newtonsoft.Json.xml
+E:\Layout setting\StudentStreamingSystem\bin\Antlr3.Runtime.pdb
+E:\Layout setting\StudentStreamingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Layout setting\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.csproj.CopyComplete
+E:\Layout setting\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.dll
+E:\Layout setting\StudentStreamingSystem\obj\Debug\StudentStreamingSystem.pdb

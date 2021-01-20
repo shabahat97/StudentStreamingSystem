@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+    <div class="container">
+        <div class="jumbotron">
+
+            <h1 class="display-4">Student Streaming System</h1>
+            <p class="lead">Welcome to Student Streaming System</p>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-lg-6">
+                <h2>Create Your Timetable</h2>
+                <h4>Explore and choose the class schedule that suits you</h4>
+                @*<a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="StudentLogin">Student Login</a>*@
+                <a class="btn btn-primary" href="@Url.Action("Login","Student")">Student Login</a>
+    </div>
+    <div class="col-lg-6">
+            <h2>Manage Timetable</h2>
+            <h4>Manage and Update class Scheduling Easily</h4>
+            @*<a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="StudentLogin">Student Login</a>*@
+            <a class="btn btn-primary" href="@Url.Action("Login","Admin")">Admin Login</a>
+        </div>
+    </div>

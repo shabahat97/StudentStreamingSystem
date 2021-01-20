@@ -1,0 +1,425 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Time Table in Calendar View</h2>
+
+
+<div id="calender"></div>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><span id="eventTitle"></span></h4>
+            </div>
+            <div class="modal-body">
+
+                <button id="btnEdit" class="btn btn-default btn-sm pull-right" style="margin-right:5px;">
+                    <span class="glyphicon glyphicon-pencil"></span> Create
+                </button>
+                <p id="pDetails"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModalSave" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Create Time Table</h4>
+            </div>
+            <div class="modal-body">
+                <form class="col-md-12 form-horizontal">
+                    <input type="hidden" id="ddThemeColor" />
+
+                    <div class="form-group">
+                        <label>CourseName</label>
+                        <input type="text" id="txtSubject" class="form-control" readonly />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Start</label>
+                        <div class="input-group date" id="dtp1">
+                            <input type="text" id="txtStart" class="form-control" readonly />
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>End</label>
+                        <div class="input-group date" id="dtp1">
+                            <input type="text" id="txtEnd" class="form-control" readonly />
+
+                        </div>
+                    </div>
+
+                    @*<div class="form-group">
+                            <label>End</label>
+                            <div class="input-group date" id="dtp1">
+                                <input type="text" id="txtEnd" class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>*@
+
+                    <div class="form-group">
+                        <label>Campus</label>
+                        <input type="text" id="Campus" class="form-control" readonly />
+
+                    </div>
+                    <div class="form-group">
+                        <label>ClassType</label>
+                        <input type="text" id="ClassType" class="form-control" readonly />
+
+                    </div><div class="form-group">
+                        <label>CourseType</label>
+                        <input type="text" id="CourseType" class="form-control" readonly />
+
+                    </div>
+                    <div class="form-group">
+                        <label>RoomName</label>
+                        <input type="text" id="RoomName" class="form-control" readonly />
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label>Credits</label>
+                        <input type="text" id="credits" class="form-control" readonly />
+
+                    </div>
+
+                    @*<div class="form-group" id="divEndDate" style="display:none">
+                            <label>End</label>
+                            <div class="input-group date" id="dtp2">
+                                <input type="text" id="txtEnd" class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>*@
+
+                    <button type="button" id="btnSave" class="btn btn-success">Save</button>
+                    <button type="button" id="btnclose" class="btn btn-default" data-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" />
+<link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" media="print" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+
+
+
+    </script>
+    <script>
+
+        var compare_dates = function (date1, date2) {
+            if (date1 > date2) return 1;
+            else if (date1 < date2) return -1;
+            else return 0;
+        }
+
+        $(document).ready(function () {
+            var events = [];
+            var selectedEvent = null;
+            FetchEventAndRenderCalendar();
+            function FetchEventAndRenderCalendar() {
+                events = [];
+                $.ajax({
+                    type: "GET",
+                    url: '/Calender/GetEvents',
+                    success: function (data) {
+                        //console.log(similar.every((x, i, a) => a[i] === a[0]));
+
+                        for (var i = 0; i < data.length; i++) {
+
+                            data[i].BeginsAt = moment(data[i].BeginsAt).format('YYYY-MM-DD HH:MM:SS');
+
+                        }
+
+
+
+
+
+                        var newArray = data;
+                        //$.each(data, function (i, v) {
+                        var prev = "";
+                        var first = true;
+                        var index;
+                        var result = [];
+                        var count = 0;
+                        //var j = 1;
+
+                        for (var i = 0; i < data.length; i++) {
+                            data.find(function (item) {
+                                if (compare_dates(new Date(item.BeginsAt), new Date(data[i].BeginsAt)) == 0) {
+                                    count += 1;
+                                }
+                            });
+                            if(count > 1) {
+                                data[i].ThemeColor = "red";
+                                ThemeColor = data[i].ThemeColor;
+
+                            } else {
+                                ThemeColor = data[i].ThemeColor;
+                            }
+
+                            events.push({
+                                title: data[i].CourseName + "(" + data[i].ClassType + ") " + "(" + data[i].Campus + ") " + "(" + data[i].RoomName + ") ",
+                                coursename: data[i].CourseName,
+                                description: data[i].CourseName + "(" + data[i].ClassType + ") ",
+                                credits: data[i].Credits,
+                                ClassType: data[i].ClassType,
+                                CourseType: data[i].CourseType,
+                                Campus: data[i].Campus,
+                                RoomName: data[i].RoomName,
+                                start: moment(data[i].BeginsAt),
+                                //end: v.EndsAt != null ? moment(v.EndsAt) : null,
+                                end: moment(data[i].EndsAt),
+                                color: ThemeColor
+                            });
+
+                            count = 0;
+                        }
+
+                        //for (var i = 0; i < data.length; i++) {
+                        //    for (var j = i+1; j < newArray.length; j++) {
+
+
+                        //        if (data[i].BeginsAt == newArray[j].BeginsAt) {
+                        //            data[i].ThemeColor="red";
+                        //            ThemeColor = data[i].ThemeColor;
+                        //            break;
+                        //            //console.log(ThemeColor);
+
+                        //           //console.log(data[i].CourseName + "(" + data[i].ClassType + ") " + "(" + data[i].Campus + ") " + "(" + data[i].RoomName + ") ");
+                        //        } else {
+
+                        //            ThemeColor = data[i].ThemeColor;
+                        //            break;
+                        //        }
+                        //    }
+                        //    events.push({
+                        //        title: data[i].CourseName + "(" + data[i].ClassType + ") " + "(" + data[i].Campus + ") " + "(" + data[i].RoomName + ") ",
+                        //        coursename: data[i].CourseName,
+                        //        description: data[i].CourseName + "(" + data[i].ClassType + ") ",
+                        //        credits: data[i].Credits,
+                        //        ClassType: data[i].ClassType,
+                        //        CourseType: data[i].CourseType,
+                        //        Campus: data[i].Campus,
+                        //        RoomName: data[i].RoomName,
+                        //        start: moment(data[i].BeginsAt),
+                        //        //end: v.EndsAt != null ? moment(v.EndsAt) : null,
+                        //        end: moment(data[i].EndsAt),
+                        //        color: ThemeColor
+                        //    });
+                        //}
+
+
+                            GenerateCalender(events);
+
+                    },
+                    error: function (error) {
+                        alert('failed');
+                    }
+                })
+            }
+
+
+
+
+
+            function GenerateCalender(events) {
+                $('#calender').fullCalendar('destroy');
+                $('#calender').fullCalendar({
+                    contentHeight: 800,
+
+                    defaultDate: new Date(),
+                    timeFormat: 'h(:mm)a',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,basicWeek,basicDay,agenda'
+                    },
+                    eventLimit: true,
+                    eventColor: '#378006',
+                    events: events,
+                    eventClick: function (calEvent, jsEvent, view) {
+                        selectedEvent = calEvent;
+                        $('#myModal #eventTitle').text(calEvent.CourseName);
+                        var $description = $('<div/>');
+                        $description.append($('<p/>').html('<b>Start:</b>' + calEvent.start.format("DD-MMM-YYYY HH:mm a")));
+                        $description.append($('<p/>').html('<b>End:</b>' + calEvent.end.format("DD-MMM-YYYY HH:mm a")));
+
+                        //if (calEvent.EndsAt != null) {
+                        //    $description.append($('<p/>').html('<b>End:</b>' + calEvent.end.format("DD-MMM-YYYY HH:mm a")));
+                        //}
+                        //$description.append($('<p/>').html('<b>Description:</b>' + calEvent.CourseName));
+                        $('#myModal #pDetails').empty().html($description);
+
+                        $('#myModal').modal();
+
+                        //},
+                        //selectable: true,
+                        //select: function (start, end) {
+                        //    selectedEvent = {
+                        //        title: '',
+                        //        description: '',
+                        //        start: start,
+                        //        end: end,
+                        //        color: ''
+
+
+                        //    };
+                        //    openAddEditForm();
+                        //    $('#calendar').fullCalendar('unselect');
+                        //},
+                        //editable: true,
+                        //eventDrop: function (event) {
+                        //    var data = {
+                        //        EventID: event.eventID,
+                        //        Subject: event.title,
+                        //        Start: event.start.format('DD/MM/YYYY HH:mm A'),
+                        //        End: event.end != null ? event.end.format('DD/MM/YYYY HH:mm A') : null,
+                        //        Description: event.description,
+                        //        ThemeColor: event.color,
+                        //        IsFullDay: event.allDay
+                        //    };
+                        //    SaveEvent(data);
+                    }
+                })
+            }
+
+            $('#btnEdit').click(function () {
+                //Open modal dialog for edit event
+                var someSessionVariable = @Session["UserId"];
+
+                    console.log(someSessionVariable);
+                    openAddEditForm(someSessionVariable);
+
+            })
+
+
+            $('#dtp1,#dtp2').datetimepicker({
+                format: 'YYYY-MM-DD HH:MM:SS'
+            });
+
+
+            function openAddEditForm(isUserConnected) {
+
+                if (selectedEvent != null && isUserConnected >0) {
+
+
+
+                    $('#txtSubject').val(selectedEvent.coursename);
+                    $('#txtStart').val(selectedEvent.start.format('DD/MM/YYYY HH:mm A'));
+                    $('#txtEnd').val(selectedEvent.end.format('DD/MM/YYYY HH:mm A'));
+
+                    //$('#txtend').val(selectedevent.end.format('dd/mm/yyyy hh:mm a'));
+                    $('#credits').val(selectedEvent.credits);
+                    $('#ClassType').val(selectedEvent.ClassType);
+                    $('#CourseType').val(selectedEvent.CourseType);
+                    $('#RoomName').val(selectedEvent.RoomName);
+                    $('#Campus').val(selectedEvent.Campus);
+
+
+                    $('#ddThemeColor').val(selectedEvent.color);
+                    $('#myModal').modal('hide');
+                    $('#myModalSave').modal();
+                }
+                else
+                {
+                    alert("Soory you can't create timetable because you are a guest")
+                }
+
+
+            }
+
+            $('#btnSave').click(function () {
+                //Validation/
+                if ($('#txtSubject').val() == "") {
+                    alert('Subject required');
+                    return;
+                }
+                if ($('#txtStart').val() == "") {
+                    alert('Start date required');
+                    return;
+                }
+
+
+
+                var data = {
+                    CourseName: $('#txtSubject').val(),
+                    BeginsAt: $('#txtStart').val(),
+                    ThemeColor: $('#ddThemeColor').val(),
+                    ClassType: $('#ClassType').val(),
+                    Credits: $('#credits').val(),
+                    CourseType: $('#CourseType').val(),
+                    RoomName: $('#RoomName').val(),
+                    Campus: $('#Campus').val(),
+
+
+                    EndsAt: $('#txtEnd').val(),
+
+
+
+                }
+                SaveEvent(data);
+                // call function for submit data to the server
+            })
+
+            function SaveEvent(data) {
+                $.ajax({
+                    type: "POST",
+                    url: '/Calender/SaveEvent',
+                    data: data,
+                    success: function (data) {
+                        if (data.status) {
+                            //Refresh the calender
+                            //FetchEventAndRenderCalendar();
+                            alert("TimeTable Successfully Created")
+
+                            $('#myModalSave').modal('hide');
+                            @*window.location.href = '@Url.Action("Index", "Calendar")';*@
+                        }
+                        else
+                        {
+                            alert("you have already created  this timetable")
+
+                        }
+
+                    },
+                    error: function () {
+                        alert('Failed');
+                    }
+                })
+            }})
+
+
+    </script>
+    <script>
+        $('.modal').bind('shown.bs.modal', function () {
+            $(".modal").css("overflow-y", "scroll");
+        });
+        $('.modal').bind('hide.bs.modal', function () {
+            $(".modal").css("overflow-y", "auto");
+        });
+    </script>
+
+}

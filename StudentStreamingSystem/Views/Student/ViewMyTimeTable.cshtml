@@ -1,0 +1,148 @@
+﻿@model IEnumerable<StudentStreamingSystem.Context.TimeTable>
+
+
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewMyTimeTable</title>
+</head>
+<body>
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    @using (Html.BeginForm())
+    {
+        <table id="myTable" style="width:100%;" class="table table-bordered">
+            <thead>
+
+                <tr>
+                    
+                    <th>
+                        @Html.DisplayNameFor(model => model.CourseName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Credits)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ClassType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CourseType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BeginsAt)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EndsAt)
+                    </th>
+                    <th>
+                        Warning
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.RoomName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Campus)
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+               @*@for(int i = 0; i < Model.Count(); i++)*@
+                @foreach (var item in Model)
+                {
+                    <tr>
+                       
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CourseName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Credits)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ClassType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CourseType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BeginsAt)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EndsAt)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ThemeColor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RoomName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Campus)
+                        </td>
+                        <td>
+                            @Html.HiddenFor(modelTtem => item.ID)
+                        </td>
+                    </tr>
+
+
+                }
+
+
+            </tbody>
+
+        </table>
+        <div class="row">
+            <input type="submit" value="Send Email" name="Submit" onclick="btnclick()" class="btn btn-warning" />
+        </div>
+
+    }
+
+
+
+</body>
+</html>
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'print'
+                ]
+            });
+
+
+
+
+        });
+
+
+    </script>
+
+
+
+    <script>
+        function btnclick()
+        {
+            alert("Email Sent Successfully")
+        }
+
+
+    </script>
+}
+

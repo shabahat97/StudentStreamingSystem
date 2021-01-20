@@ -1,0 +1,371 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Time Table In Calender View</h2>
+<hr />
+<div id="calender"></div>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><span id="eventTitle"></span></h4>
+            </div>
+            <div class="modal-body">
+                <button id="btnDelete" class="btn btn-default btn-sm pull-right">
+                    <span class="glyphicon glyphicon-remove"></span> Remove
+                </button>
+                <button id="btnEdit" class="btn btn-default btn-sm pull-right" style="margin-right:5px;">
+                    <span class="glyphicon glyphicon-pencil"></span> Edit
+                </button>
+                <p id="pDetails"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModalSave" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Table Event</h4>
+            </div>
+            <div class="modal-body">
+                <form class="col-md-12 form-horizontal">
+                    <input type="hidden" id="hdEventID" value="0" />
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" id="txtSubject" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Start</label>
+                        <div class="input-group date" id="dtp1">
+                            <input type="text" id="txtStart" class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="chkIsFullDay" checked="checked" />  Is Full Day event</label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="divEndDate" style="display:none">
+                        <label>End</label>
+                        <div class="input-group date" id="dtp2">
+                            <input type="text" id="txtEnd" class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="txtDescription" rows="3" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Theme Color</label>
+                        <select id="ddThemeColor" class="form-control">
+                            <option value="">Default</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+                    <button type="button" id="btnSave" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" />
+<link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.min.css" rel="stylesheet" media="print" />
+@section  Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            debugger;
+            var Color;
+            var events = [];
+
+
+
+            $.ajax({
+                type: 'GET',
+                url: '/Calender/GetEvents',
+                success: function (data) {
+                    debugger;
+                    $.each(data, function (i, v) {
+                        var prev = "";
+                        var first = true;
+
+                            //for (var i = 1; i < data.length; i++) {
+                            //    if (data[i].BeginsAt === data[0].BeginsAt) {
+                            //        alert("finish");
+                            //        return false;
+                            //    }
+                            //}
+                            //return true;
+
+
+                        if (data.length >= 1) {
+
+
+                            //else if (data[0].BeginsAt == data[2].BeginsAt ) {
+
+                            //    data[0].ThemeColor = "red";
+                            //    data[2].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[0].BeginsAt == data[3].BeginsAt) {
+
+                            //    data[0].ThemeColor = "red";
+                            //    data[3].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[0].BeginsAt == data[4].BeginsAt) {
+
+                            //    data[0].ThemeColor = "red";
+                            //    data[4].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[1].BeginsAt == data[2].BeginsAt) {
+
+                            //    data[1].ThemeColor = "red";
+                            //    data[2].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[1].BeginsAt == data[3].BeginsAt) {
+
+                            // data[1].ThemeColor = "red";
+                            //    data[3].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[1].BeginsAt == data[4].BeginsAt) {
+
+                            //    data[1].ThemeColor = "red";
+                            //    data[4].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[2].BeginsAt == data[3].BeginsAt) {
+
+                            //    data[2].ThemeColor = "red";
+                            //    data[3].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[2].BeginsAt == data[4].BeginsAt) {
+
+                            //    data[2].ThemeColor = "red";
+                            //    data[4].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+                            //else if (data[3].BeginsAt == data[4].BeginsAt) {
+
+                            //    data[3].ThemeColor = "red";
+                            //    data[4].ThemeColor = "red";
+
+                            //    ThemeColor = data[i].ThemeColor;
+                            //}
+
+
+                            //else {
+                            //    ThemeColor = v.ThemeColor;
+                            //}
+
+                            if (data[i].BeginsAt === data[0].BeginsAt) {
+
+                                console.log('The value at data[' + i + '] is: ' + v.BeginsAt);
+
+                                data[i].ThemeColor = "red";
+
+
+                                alert(data[i].ThemeColor)
+                                ThemeColor = data[i].ThemeColor;
+                            }
+                            else {
+                                ThemeColor = v.ThemeColor;
+                            }
+
+                        }
+
+                        //    if (data.length == 3) {
+                        //        if ((data[0].BeginsAt == data[1].BeginsAt) || (data[1].BeginsAt == data[2].BeginsAt) || (data[0].BeginsAt == data[2].BeginsAt)) {
+                        //            data[1].ThemeColor = "red";
+                        //            data[0].ThemeColor = "red";
+                        //            data[2].ThemeColor = "red";
+
+                        //            ThemeColor = data[i].ThemeColor;
+                        //        }
+                        //        else {
+                        //            ThemeColor = v.ThemeColor;
+                        //        }
+                        //    }
+                        //    if (data.length == 4) {
+                        //        if ((data[0].BeginsAt == data[1].BeginsAt) || (data[1].BeginsAt == data[2].BeginsAt) || (data[2].BeginsAt == data[3].BeginsAt) || (data[0].BeginsAt == data[2].BeginsAt) || (data[0].BeginsAt == data[3].BeginsAt)) {
+                        //            data[1].ThemeColor = "red";
+                        //            data[0].ThemeColor = "red";
+                        //            data[2].ThemeColor = "red";
+                        //            data[3].ThemeColor = "red";
+
+                        //            ThemeColor = data[i].ThemeColor;
+
+                        //        }
+                        //        else {
+                        //            ThemeColor = v.ThemeColor;
+                        //        }
+                        //    }
+                        //    if (data.length == 5) {
+                        //        if ((data[0].BeginsAt == data[1].BeginsAt) || (data[1].BeginsAt == data[2].BeginsAt) || (data[2].BeginsAt == data[3].BeginsAt) || (data[3].BeginsAt == data[4].BeginsAt) || (data[0].BeginsAt == data[2].BeginsAt) || (data[0].BeginsAt == data[3].BeginsAt) || (data[0].BeginsAt == data[4].BeginsAt) || (data[1].BeginsAt == data[3].BeginsAt) || (data[1].BeginsAt == data[4].BeginsAt) || (data[2].BeginsAt == data[4].BeginsAt)) {
+                        //            data[1].ThemeColor = "red";
+                        //            data[0].ThemeColor = "red";
+                        //            data[2].ThemeColor = "red";
+                        //            data[3].ThemeColor = "red";
+                        //            data[4].ThemeColor = "red";
+
+
+                        //            ThemeColor = data[i].ThemeColor;
+                        //        }
+                        //        else {
+                        //            ThemeColor = v.ThemeColor;
+                        //        }
+                        //    }
+                        //}
+                        //else {
+                        //    ThemeColor = v.ThemeColor;
+                        //}
+                        //if (v.ClassType == 'Compulsory') {
+                        //    Color = "green";
+                        //}
+                        //if (v.ClassType == 'Not Compulsory'){
+                        //    Color = "red";
+                        //}
+                        events.push({
+                            title: v.CourseName + "("+v.ClassType+") ",
+                            description: v.TutorName,
+                            start: moment(v.BeginsAt),
+                            end: v.EndsAt != null ? moment(v.EndsAt) : null,
+                            //  end: moment(v.End),
+                            color: ThemeColor
+                        });
+
+                    })
+
+                    GenerateCalender(events);
+                },
+                error: function (error) {
+                    alert('failed');
+                }
+            })
+
+
+            function openAddEditForm() {
+                if (selectedEvent != null) {
+                    $('#hdEventID').val(selectedEvent.eventID);
+                    $('#txtSubject').val(selectedEvent.title);
+                    $('#txtStart').val(selectedEvent.start.format('DD/MM/YYYY HH:mm A'));
+                    $('#chkIsFullDay').prop("checked", selectedEvent.allDay || false);
+                    $('#chkIsFullDay').change();
+                    $('#txtEnd').val(selectedEvent.end != null ? selectedEvent.end.format('DD/MM/YYYY HH:mm A') : '');
+                    $('#txtDescription').val(selectedEvent.description);
+                    $('#ddThemeColor').val(selectedEvent.color);
+                }
+                $('#myModal').modal('hide');
+                $('#myModalSave').modal();
+            }
+            function GenerateCalender(events) {
+                debugger;
+                $('#calender').fullCalendar('destroy');
+                $('#calender').fullCalendar({
+                    contentHeight: 400,
+                    defaultDate: new Date(),
+                    timeFormat: 'h(:mm)a',
+                    header: {
+                        left: 'prev,next,today',
+                        center: 'title',
+                        right: 'month,basicWeek,basicDay,agenda'
+                    },
+                    eventLimit: true,
+                    eventColor: '#378006',
+                    events: events,
+                    eventClick: function (calEvent, jsEvent, view) {
+                        selectedEvent = calEvent;
+                        $('#myModal #eventTitle').text(calEvent.title);
+                        var $description = $('<div/>');
+                        $description.append($('<p/>').html('<b>Start:</b>' + calEvent.start.format("DD-MMM-YYYY HH:mm a")));
+                        if (calEvent.end != null) {
+                            $description.append($('<p/>').html('<b>End:</b>' + calEvent.end.format("DD-MMM-YYYY HH:mm a")));
+                        }
+                        $description.append($('<p/>').html('<b>Description:</b>' + calEvent.description));
+                        $('#myModal #pDetails').empty().html($description);
+
+                        $('#myModal').modal();
+                    },
+                    selectable: true,
+                    select: function (start, end) {
+                        selectedEvent = {
+                            eventID: 0,
+                            title: '',
+                            description: '',
+                            start: start,
+                            end: end,
+                            allDay: false,
+                            color: ''
+                        };
+                        openAddEditForm();
+                        $('#calendar').fullCalendar('unselect');
+                    },
+                    editable: true,
+                    eventDrop: function (event) {
+                        var data = {
+                            EventID: event.eventID,
+                            Subject: event.title,
+                            Start: event.start.format('DD/MM/YYYY HH:mm A'),
+                            End: event.end != null ? event.end.format('DD/MM/YYYY HH:mm A') : null,
+                            Description: event.description,
+                            ThemeColor: event.color,
+                            IsFullDay: event.allDay
+                        };
+                        SaveEvent(data);
+                    }
+                })
+            }
+
+
+            function openAddEditForm() {
+                if (selectedEvent != null) {
+                    $('#hdEventID').val(selectedEvent.eventID);
+                    $('#txtSubject').val(selectedEvent.title);
+                    $('#txtStart').val(selectedEvent.start.format('DD/MM/YYYY HH:mm A'));
+                    $('#chkIsFullDay').prop("checked", selectedEvent.allDay || false);
+                    $('#chkIsFullDay').change();
+                    $('#txtEnd').val(selectedEvent.end != null ? selectedEvent.end.format('DD/MM/YYYY HH:mm A') : '');
+                    $('#txtDescription').val(selectedEvent.description);
+                    $('#ddThemeColor').val(selectedEvent.color);
+                }
+                $('#myModal').modal('hide');
+                $('#myModalSave').modal();
+            }
+
+        })
+    </script>
+}

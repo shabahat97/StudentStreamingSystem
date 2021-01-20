@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudentStreamingSystemDBModelStoreContainer" CdmEntityContainer="StudentStreamingSystemDBEntities">
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="StudentStreamingSystemDBModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="EndsAt" ColumnName="EndsAt" />
+          <ScalarProperty Name="BeginsAt" ColumnName="BeginsAt" />
+          <ScalarProperty Name="ClassType" ColumnName="ClassType" />
+          <ScalarProperty Name="Streams" ColumnName="Streams" />
+          <ScalarProperty Name="Credits" ColumnName="Credits" />
+          <ScalarProperty Name="Campus" ColumnName="Campus" />
+          <ScalarProperty Name="Programme" ColumnName="Programme" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseNo" ColumnName="CourseNo" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="StudentStreamingSystemDBModel.Room">
+        <MappingFragment StoreEntitySet="Room">
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="RoomName" ColumnName="RoomName" />
+          <ScalarProperty Name="RoomID" ColumnName="RoomID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="StudentStreamingSystemDBModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="TutorEmailID" ColumnName="TutorEmailID" />
+          <ScalarProperty Name="TutorName" ColumnName="TutorName" />
+          <ScalarProperty Name="TutorID" ColumnName="TutorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="StudentStreamingSystemDBModel.Event">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="IsFullDay" ColumnName="IsFullDay" />
+          <ScalarProperty Name="ThemeColor" ColumnName="ThemeColor" />
+          <ScalarProperty Name="End" ColumnName="End" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="StudentStreamingSystemDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="BeginsAt" ColumnName="BeginsAt  " />
+          <ScalarProperty Name="APNo_StudentID" ColumnName="APNo_StudentID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Streams" ColumnName="Streams" />
+          <ScalarProperty Name="EndsAt_" ColumnName="EndsAt " />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="TotalCredits" ColumnName="TotalCredits" />
+          <ScalarProperty Name="AvailableCredits" ColumnName="AvailableCredits" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
